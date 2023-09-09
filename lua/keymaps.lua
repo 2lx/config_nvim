@@ -52,6 +52,13 @@ map("n", "<leader><space>", ":nohlsearch<CR>")
 -- switch source/header
 map("n", "<leader>s", "<cmd>lua require('switch_source_header')()<CR>")
 
---json
+-- json
 map("v", "<leader>jf", ":!python -m json.tool<CR>")
 map("n", "<leader>jf", ":%!python -m json.tool<CR>")
+
+-- plugin gitgutter
+map("n", ")", "<Plug>(GitGutterNextHunk)")
+map("n", "(", "<Plug>(GitGutterPrevHunk)")
+map("n", "<leader>hs", "<Plug>(GitGutterStageHunk)")
+map("n", "<leader>hu", "<Plug>(GitGutterUndoHunk)")
+map("n", "<leader>hp", "<Plug>(GitGutterPreviewHunk)")
