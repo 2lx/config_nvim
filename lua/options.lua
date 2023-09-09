@@ -56,7 +56,7 @@ opt.updatetime = 250        -- ms to wait for trigger an event
 
 opt.pastetoggle = "<F2>"    -- deprecated
 
--- -- Disable builtin plugins
+-- disable builtin plugins
 local disabled_built_ins = {
    "2html_plugin",
    "getscript",

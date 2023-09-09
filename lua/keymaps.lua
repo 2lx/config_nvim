@@ -30,6 +30,7 @@ map("n", "<leader>b", "<cmd>Telescope buffers<CR>")
 map("n", "<leader>gs", "<cmd>Telescope git_status<CR>")
 map("n", "<leader>?", "<cmd>Telescope keymaps<CR>")
 map("n", "<leader>m", "<cmd>Telescope man_pages<CR>")
+map("n", "<leader>t", "<cmd>TagbarToggle<CR>")
 
 -- registers
 map("n", "<leader>r", "<cmd>Telescope registers<CR>")

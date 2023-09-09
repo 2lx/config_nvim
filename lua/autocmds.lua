@@ -43,6 +43,12 @@ autocmd("BufNewFile", {
     command = "set signcolumn=yes",
 })
 
+-- auto close nvim-tree
+autocmd('BufEnter', {
+    command = "if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif",
+    nested = true,
+})
+
 -- do cd on reading first file
 local ft_to_cd = {
     cpp = { "src", "source" },
@@ -65,4 +71,10 @@ autocmd("BufRead", {
         end
         first_file_open = false
     end,
+})
+
+-- plugins
+autocmd("FileType", {
+    pattern = "*",
+    command = "EnableStripWhitespaceOnSave",
 })
