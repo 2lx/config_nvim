@@ -10,6 +10,7 @@
                 }
             },
             "filetypes": [
+                "h",
                 "c",
                 "cc",
                 "cpp",
@@ -32,23 +33,24 @@
             ],
             "settings": {
                 "Lua": {
-                    "workspace": {
-                        "maxPreload": 2000,
-                        "preloadFileSize": 1000,
-                        "checkThirdParty": false
-                    },
-                    "runtime": {
-                        "version": "Lua 5.4.4"
-                    },
                     "diagnostics": {
+                        "disable": [
+                            "lowercase-global",
+                            "newfield-call"
+                        ],
                         "enable": true,
                         "globals": [
-                            "times",
-                            "vim"
-                        ],
-                        "disable": [
-                            "lowercase-global"
+                            "clib",
+                            "jana"
                         ]
+                    },
+                    "runtime": {
+                        "version": "Lua 5.4"
+                    },
+                    "workspace": {
+                        "checkThirdParty": false,
+                        "maxPreload": 2000,
+                        "preloadFileSize": 1000
                     }
                 }
             }

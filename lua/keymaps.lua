@@ -52,6 +52,10 @@ map("n", "<leader><space>", ":nohlsearch<CR>")
 -- switch source/header
 map("n", "<leader>s", "<cmd>lua require('switch_source_header')()<CR>")
 
+-- lua
+map("n", "<leader>F", ":call LuaFormat()<CR>")
+map("v", "<leader>F", ":call LuaFormat()<CR>")
+
 -- json
 map("v", "<leader>jf", ":!python -m json.tool<CR>")
 map("n", "<leader>jf", ":%!python -m json.tool<CR>")

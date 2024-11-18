@@ -23,7 +23,7 @@ opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false        -- don't use swapfile
 opt.completeopt = 'menuone,noinsert,noselect'  -- autocomplete options
 opt.foldmethod = 'marker'   -- enable folding (default 'foldmarker')
-opt.colorcolumn = '111'      -- line lenght marker at 80 columns
+opt.colorcolumn = '181'      -- line lenght marker at 80 columns
 opt.splitright = true       -- vertical split to the right
 opt.splitbelow = true       -- horizontal split to the bottom
 opt.linebreak = true        -- wrap on word boundary
@@ -32,7 +32,8 @@ opt.laststatus = 3          -- set global statusline
 opt.cmdheight = 2
 opt.cursorline = true       -- show current line
 
-opt.listchars = "eol:↵,trail:~,tab:>-,nbsp:␣"
+opt.listchars = "trail:~,tab:>-,nbsp:␣"
+opt.list = true
 opt.shortmess:remove{ 'S' } -- show the count of search matches in the statusline
 opt.shortmess:append("c")   -- coc.nvim. Don't pass messages to |ins-completion-menu|
 
@@ -43,7 +44,7 @@ opt.pumheight = 10          -- limit popup menu height
 
 opt.encoding = "UTF-8"      -- how vim represent characters internally
 opt.fileencodings = "UTF-8,cp1251,koi8-r,cp866" -- auto detect encoding written to file
-opt.termencoding = "UTF-8"  -- define how keyboard encodes what you type
+-- opt.termencoding = "UTF-8"  -- define how keyboard encodes what you type
 opt.fileformat = "unix"     -- this gives the <EOL> of the current buffer: <NL>
 
 opt.history = 128           -- history size for Ex mode (:command)
@@ -51,10 +52,10 @@ opt.undolevels = 512        -- history size for undo command
 opt.undodir = "$HOME/.vim/undo/" -- undofile. make sure to create this directory
 opt.hidden = true           -- enable background buffers
 opt.lazyredraw = true       -- faster scrolling
-opt.synmaxcol = 240         -- max column for syntax highlight
+opt.synmaxcol = 440         -- max column for syntax highlight
 opt.updatetime = 250        -- ms to wait for trigger an event
 
-opt.pastetoggle = "<F2>"    -- deprecated
+-- opt.pastetoggle = "<F2>"    -- deprecated
 
 -- disable builtin plugins
 local disabled_built_ins = {

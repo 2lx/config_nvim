@@ -33,6 +33,12 @@ autocmd("FileType", {
     command = "set spelllang=ru_yo spell",
 })
 
+-- Set readonly for some paths
+autocmd("BufRead", {
+    pattern = "*/usr/include/*",
+    command = "setlocal readonly",
+})
+
 -- always show signcolumn
 autocmd("BufRead", {
     pattern = "",
@@ -64,7 +70,7 @@ autocmd("BufRead", {
         if first_file_open and paths then
             for _, path in ipairs(paths) do
                 if vim.fn.isdirectory(path) ~= 0 then
-                    vim.loop.chdir(path)
+                    vim.cmd("cd " .. path)
                     break
                 end
             end
