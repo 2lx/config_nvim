@@ -1,4 +1,5 @@
 {
+    "inlayHint.enable": false,
     "diagnostic.checkCurrentLine": true,
     "languageserver": {
         "coc-clangd": {
