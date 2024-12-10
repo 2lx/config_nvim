@@ -78,9 +78,3 @@ autocmd("BufRead", {
         first_file_open = false
     end,
 })
-
--- plugins
-autocmd("FileType", {
-    pattern = "*",
-    command = "EnableStripWhitespaceOnSave",
-})

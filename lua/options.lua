@@ -32,7 +32,7 @@ opt.laststatus = 3          -- set global statusline
 opt.cmdheight = 2
 opt.cursorline = true       -- show current line
 
-opt.listchars = "trail:~,tab:>-,nbsp:␣"
+opt.listchars = "trail:~,tab:>-,nbsp:␣,trail:•,extends:⟩,precedes:⟨"
 opt.list = true
 opt.shortmess:remove{ 'S' } -- show the count of search matches in the statusline
 opt.shortmess:append("c")   -- coc.nvim. Don't pass messages to |ins-completion-menu|
