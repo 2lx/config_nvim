@@ -1,6 +1,15 @@
 {
     "inlayHint.enable": false,
     "diagnostic.checkCurrentLine": true,
+
+    "Lua.diagnostics.globals": ["clib", "jana", "CONFIG"],
+    "Lua.diagnostics.disable": ["lowercase-global", "newfield-call"],
+    "Lua.diagnostics.enable": true,
+    "Lua.runtime.version": "Lua 5.4",
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.workspace.maxPreload": 2000,
+    "Lua.workspace.preloadFileSize": 1000,
+
     "languageserver": {
         "coc-clangd": {
             "enabled": true,
